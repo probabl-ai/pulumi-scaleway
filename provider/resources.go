@@ -231,42 +231,6 @@ func Provider() tfbridge.ProviderInfo {
 					Source: "domain_zone.md",
 				},
 			},
-			"scaleway_documentdb_database": {
-				Tok: scalewayResource(scalewayMod, "DocumentdbDatabase"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_database.md",
-				},
-			},
-			"scaleway_documentdb_instance": {
-				Tok: scalewayResource(scalewayMod, "DocumentdbInstance"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_instance.md",
-				},
-			},
-			"scaleway_documentdb_private_network_endpoint": {
-				Tok: scalewayResource(scalewayMod, "DocumentdbPrivateNetworkEndpoint"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_private_network_endpoint.md",
-				},
-			},
-			"scaleway_documentdb_privilege": {
-				Tok: scalewayResource(scalewayMod, "DocumentdbPrivilege"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_privilege.md",
-				},
-			},
-			"scaleway_documentdb_read_replica": {
-				Tok: scalewayResource(scalewayMod, "DocumentdbReadReplica"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_read_replica.md",
-				},
-			},
-			"scaleway_documentdb_user": {
-				Tok: scalewayResource(scalewayMod, "DocumentdbUser"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_user.md",
-				},
-			},
 			"scaleway_flexible_ip_mac_address": {
 				Tok: scalewayResource(scalewayMod, "FlexibleIpMacAddress"),
 				Docs: &tfbridge.DocInfo{
@@ -645,6 +609,12 @@ func Provider() tfbridge.ProviderInfo {
 					Source: "rdb_user.md",
 				},
 			},
+			"scaleway_registry_image_tag": {
+				Tok: scalewayResource(scalewayMod, "RegistryIamgeTag"),
+				Docs: &tfbridge.DocInfo{
+					Source: "registry_image_tag.md",
+				},
+			},
 			"scaleway_registry_namespace": {
 				Tok: scalewayResource(scalewayMod, "RegistryNamespace"),
 				Docs: &tfbridge.DocInfo{
@@ -679,6 +649,12 @@ func Provider() tfbridge.ProviderInfo {
 				Tok: scalewayResource(scalewayMod, "TemDomainValidation"),
 				Docs: &tfbridge.DocInfo{
 					Source: "tem_domain_validation.md",
+				},
+			},
+			"scaleway_tem_webhook": {
+				Tok: scalewayResource(scalewayMod, "TemWebhook"),
+				Docs: &tfbridge.DocInfo{
+					Source: "tem_webhook.md",
 				},
 			},
 			"scaleway_vpc_gateway_network": {
@@ -727,6 +703,12 @@ func Provider() tfbridge.ProviderInfo {
 				Tok: scalewayResource(scalewayMod, "VpcPublicGatewayDhcpReservation"),
 				Docs: &tfbridge.DocInfo{
 					Source: "vpc_public_gateway_dhcp_reservation.md",
+				},
+			},
+			"scaleway_vpc_route": {
+				Tok: scalewayResource(scalewayMod, "VpcRoute"),
+				Docs: &tfbridge.DocInfo{
+					Source: "vpc_route.md",
 				},
 			},
 			"scaleway_function_trigger": {
@@ -855,18 +837,6 @@ func Provider() tfbridge.ProviderInfo {
 				Tok: scalewayDataSource(scalewayMod, "getDomainZone"),
 				Docs: &tfbridge.DocInfo{
 					Source: "domain_zone.md",
-				},
-			},
-			"scaleway_documentdb_database": {
-				Tok: scalewayDataSource(scalewayMod, "getDocumentdbDatabase"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_database.md",
-				},
-			},
-			"scaleway_documentdb_instance": {
-				Tok: scalewayDataSource(scalewayMod, "getDocumentdbInstance"),
-				Docs: &tfbridge.DocInfo{
-					Source: "documentdb_instance.md",
 				},
 			},
 			"scaleway_documentdb_load_balancer_endpoint": {
@@ -1149,6 +1119,12 @@ func Provider() tfbridge.ProviderInfo {
 				Tok: scalewayDataSource(scalewayMod, "getRegistryImage"),
 				Docs: &tfbridge.DocInfo{
 					Source: "registry_image.md",
+				},
+			},
+			"scaleway_registry_image_tag": {
+				Tok: scalewayDataSource(scalewayMod, "RegistryIamgeTag"),
+				Docs: &tfbridge.DocInfo{
+					Source: "registry_namespace.md",
 				},
 			},
 			"scaleway_registry_namespace": {
